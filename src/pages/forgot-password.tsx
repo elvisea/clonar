@@ -8,12 +8,12 @@ export default function Home() {
   const handleLogin = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     alert('Enviar!');
-  }
+  };
 
   const handleClickGoBack = (e: FormEvent<HTMLButtonElement>) => {
-    e.preventDefault()
-    router.back()
-  }
+    e.preventDefault();
+    router.back();
+  };
 
   return (
     <>
@@ -26,7 +26,7 @@ export default function Home() {
             </h1>
             <input type="text" />
             <div>
-              <button onClick={() => { }}>Enviar</button>
+              <button>Enviar</button>
               <button onClick={handleClickGoBack}>Voltar</button>
             </div>
           </Formulario>
