@@ -4,8 +4,9 @@ import { Container, Content, Formulario } from '../styles/pages/Home'
 
 export default function Home() {
 
-  async function handleLogin(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault()
+  const handleLogin = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    alert('Fazer Login');
   }
 
   return (
@@ -16,7 +17,7 @@ export default function Home() {
             <input type="text" />
             <input type="text" />
             <button>Login</button>
-            <Link href="/dashboard">
+            <Link href="/forgot-password">
               <a>
                 <span>Esqueci Minha Senha!</span>
               </a>

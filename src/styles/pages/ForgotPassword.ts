@@ -24,31 +24,40 @@ export const Formulario = styled.form`
     width: 100%;
     max-width: 350px;
 
+    h1 {
+        color: #666666;
+        font-size: 12px;
+        text-align: center;
+        line-height: 15.6px;
+        margin-bottom: 16px;
+    }
+
     input {
-        max-width: 290px;
         width: 100%;
         height: 30px;
+        padding: 0 16px;
+        max-width: 290px;
         border-radius: 4px;
         border: 1px solid #ccc;
-        padding: 0 16px;
+        margin-bottom: 16px;
+    }
 
-        &:first-child {
-            margin-bottom: 16px;
+    div {
+        display: flex;
+        flex-direction: row;
+
+        button {
+            color: #fff;
+            width: 120px;
+            height: 26px;
+            border: none;
+            margin-right: 4px;
+            border-radius: 2px;
+            background: #3f6bff;
+            
+            :last-child {
+                margin-right: 0px;
+            }
         }
-    }
-
-    button {
-        margin-top: 16px;
-        width: 120px;
-        height: 26px;
-        border: none;
-        border-radius: 2px;
-        color: #fff;
-        background: #3f6bff;
-    }
-
-    a {
-        margin-top: 16px;
-        color: #3f6bff;
     }
 `;
