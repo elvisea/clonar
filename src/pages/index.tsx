@@ -14,8 +14,8 @@ export default function Home() {
       <Container>
         <Content>
           <Formulario onSubmit={handleLogin}>
-            <input type="text" />
-            <input type="text" />
+            <input placeholder="Email" />
+            <input placeholder="Senha" />
             <button>Login</button>
             <Link href="/forgot-password">
               <a>
